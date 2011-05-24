@@ -1,0 +1,5 @@
+Agda XML Library
+================
+
+Simple bindings for parsing, processing and serializing XML.
+It links against the Haskell Text.XML.Expat library, which in turn links against expat.
