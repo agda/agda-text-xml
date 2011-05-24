@@ -5,11 +5,11 @@ dependencies = agda-web-uri
 
 # Dependency URIs
 
-export agda-web-uri ?= https://github.com/agda/agda-web-uri/tarball/v0.0.1
+export agda-web-uri ?= https://github.com/agda/agda-web-uri/tarball/v0.0.2
 
 # Include the Agda makefile
 
-export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.1/Makefile
+export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.2/Makefile
 export agdamakefile ?= $(CURDIR)/build/share/make/agda-makefile
 export CURL ?= curl
 
