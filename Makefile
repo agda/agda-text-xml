@@ -5,12 +5,12 @@ dependencies = agda-web-uri
 
 # Dependency URIs
 
-export agda-web-uri ?= https://github.com/agda/agda-web-uri/tarball/v0.0.2
+export agda-web-uri ?= https://github.com/agda/agda-web-uri/tarball/v0.0.3
 
 # Include the Agda makefile
 
-export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.2/Makefile
-export agdamakefile ?= $(CURDIR)/build/share/make/agda-makefile
+export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.4/Makefile
+export agdamakefile ?= $(CURDIR)/build/share/make/agda-makefile-0.0.4
 export CURL ?= curl
 
 $(agdamakefile):
@@ -24,7 +24,7 @@ include $(agdamakefile)
 
 install-agda: $(agdadir)/Text/XML/Everything.agdai
 
-install-html: $(htmldir)/Text/XML/Everything.html
+install-html: $(htmldir)/Text.XML.Everything.html
 
 install-doc:
 	$(INSTALL) -D README $(docdir)
@@ -32,7 +32,7 @@ install-doc:
 
 install: install-dependencies install-agda install-html install-doc
 
-clean:
+clean: clean-dependencies
 
 veryclean:
 	rm -rf $(builddir)
