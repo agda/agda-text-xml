@@ -9,8 +9,8 @@ export agda-web-uri ?= https://github.com/agda/agda-web-uri/tarball/v0.0.3
 
 # Include the Agda makefile
 
-export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.4/Makefile
-export agdamakefile ?= $(CURDIR)/build/share/make/agda-makefile-0.0.4
+export agdamakefileuri ?= https://github.com/agda/agda-makefile/raw/v0.0.5/Makefile
+export agdamakefile ?= $(CURDIR)/build/share/make/agda-makefile-0.0.5
 export CURL ?= curl
 
 $(agdamakefile):
